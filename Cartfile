@@ -1,0 +1,11 @@
+github "ReactiveX/RxSwift" ~> 5.0
+github "RxSwiftCommunity/Action" ~> 4.0.0
+github "RxSwiftCommunity/RxDataSources" ~> 4.0
+github "shu223/Pulsator"
+github "thii/FontAwesome.swift"
+github "Polidea/RxBluetoothKit"
+github "SnapKit/SnapKit" ~> 5.0.0
+github "airbnb/lottie-ios"
+github "kishikawakatsumi/KeychainAccess"
+github "pkluz/PKHUD" ~> 5.0
+

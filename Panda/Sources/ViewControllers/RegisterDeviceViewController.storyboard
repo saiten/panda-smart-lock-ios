@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8vH-uY-6gH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="exotic_agent_regular.ttf">
+            <string>exotic-agent-regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register key-->
+        <scene sceneID="gbW-4z-H8l">
+            <objects>
+                <viewController id="8vH-uY-6gH" customClass="RegisterDeviceViewController" customModule="PANDA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTn-qC-JYU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rNO-30-Oy8">
+                                <rect key="frame" x="107" y="164" width="200" height="200"/>
+                                <color key="backgroundColor" name="CaribbeanGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fAc-aw-UUT"/>
+                                    <constraint firstAttribute="height" constant="200" id="uvE-GK-JNa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcO-ek-grC">
+                                <rect key="frame" x="50" y="464" width="314" height="348"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" name="BabyPowder"/>
+                                <fontDescription key="fontDescription" name="exotic-agent-regular" family="exotic agent" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="Shadow"/>
+                        <constraints>
+                            <constraint firstItem="rNO-30-Oy8" firstAttribute="top" secondItem="iau-xp-OyJ" secondAttribute="top" constant="120" id="3Pl-ww-rMj"/>
+                            <constraint firstItem="iau-xp-OyJ" firstAttribute="bottom" secondItem="tcO-ek-grC" secondAttribute="bottom" constant="50" id="C2e-qq-3EU"/>
+                            <constraint firstItem="iau-xp-OyJ" firstAttribute="trailing" secondItem="tcO-ek-grC" secondAttribute="trailing" constant="50" id="CB1-BZ-lPn"/>
+                            <constraint firstItem="rNO-30-Oy8" firstAttribute="centerX" secondItem="fTn-qC-JYU" secondAttribute="centerX" id="R9D-dw-1O6"/>
+                            <constraint firstItem="tcO-ek-grC" firstAttribute="leading" secondItem="iau-xp-OyJ" secondAttribute="leading" constant="50" id="SzG-hs-oAE"/>
+                            <constraint firstItem="tcO-ek-grC" firstAttribute="top" secondItem="rNO-30-Oy8" secondAttribute="bottom" constant="100" id="avD-qo-aTd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iau-xp-OyJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register key" id="chJ-UF-oi8"/>
+                    <connections>
+                        <outlet property="logTextView" destination="tcO-ek-grC" id="PI5-XW-Gmz"/>
+                        <outlet property="phoneView" destination="rNO-30-Oy8" id="W7P-7E-QKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mE1-pd-CME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BabyPowder">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CaribbeanGreen">
+            <color red="0.024000000208616257" green="0.83899998664855957" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Shadow">
+            <color red="0.16470588235294117" green="0.19215686274509805" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

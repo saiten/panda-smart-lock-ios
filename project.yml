@@ -1,0 +1,94 @@
+attributes:
+  ORGANIZATIONNAME: co.saiten
+settings:
+  base:
+    SWIFT_VERSION: 5.1
+    CURRENT_PROJECT_VERSION: 1
+    DEVELOPMENT_TEAM: L47JL4W4N2
+options:
+  bundleIdPrefix: co.saiten.panda
+  PRODUCT_NAME: $TARGET_NAME
+  useTabs: false
+  groupSortPosition: top
+  deploymentTarget:
+    iOS: "13.0"
+name: Panda
+configs:
+  Debug: debug
+  Release: release
+settingGroups:
+  Debug:
+    base:
+      ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: ${inherited}
+  Release:
+    base:
+      ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: ${inherited}
+targets:
+  Panda:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    attributes:
+      ProvisioningStyle: Automatic
+    sources: Panda
+    settings:
+      base:
+        INFOPLIST_FILE: Panda/Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: co.saiten.panda
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon        
+    preBuildScripts:
+      - script: mint run swiftgen
+        name: swiftgen
+    dependencies:
+      - target: Common
+      - carthage: RxSwift
+      - carthage: RxRelay
+      - carthage: RxCocoa
+      - carthage: Action
+      - carthage: RxDataSources
+      - carthage: Differentiator
+      - carthage: RxBluetoothKit
+      - carthage: Pulsator
+      - carthage: FontAwesome
+      - carthage: Lottie
+      - carthage: SnapKit
+      - carthage: KeychainAccess
+      - carthage: PKHUD
+    schema:
+      testTargets: [PandaTests]
+  PandaTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: PandaTests  
+    settings:
+      base:
+        TEST_HOST: "$(BUNDLE_LOADER)" 
+        PRODUCT_BUNDLE_IDENTIFIER: co.saiten.panda-test
+    dependencies:
+      - target: Panda
+  Common:
+    type: framework
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: Common
+    settings:
+      base:
+        INFOPLIST_FILE: common/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: co.saiten.panda.common
+    schema:
+      testTargets: [CommonTests]
+    dependencies:
+      - carthage: RxSwift
+      - carthage: RxRelay
+      - carthage: Action
+      - carthage: RxBluetoothKit
+      - carthage: KeychainAccess
+  CommonTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: CommonTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.saiten.panda.common-test
+    dependencies:
+      - target: Common

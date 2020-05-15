@@ -1,0 +1,10 @@
+xcassets:
+  inputs: Panda/Resources/Assets
+  outputs: 
+    templateName: swift4
+    output: Panda/Generated/Assets.swift
+fonts:
+  inputs: Panda/Resources/Fonts
+  outputs:
+    templateName: swift4
+    output: Panda/Generated/Fonts.swift

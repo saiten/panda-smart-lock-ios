@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dNe-hg-4Wb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="exotic_agent_regular.ttf">
+            <string>exotic-agent-regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="bg4-He-hhi">
+            <objects>
+                <viewController id="dNe-hg-4Wb" customClass="MainViewController" customModule="Panda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BxZ-7Z-7ni">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fWc-Jw-Owb">
+                                <rect key="frame" x="79" y="74" width="256" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="orG-Qf-Yb1"/>
+                                    <constraint firstAttribute="height" constant="46" id="vac-DG-WSK"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcj-6u-RBz">
+                                <rect key="frame" x="30" y="220" width="354" height="265.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wireframe" translatesAutoresizingMaskIntoConstraints="NO" id="WWH-0V-mxO">
+                                        <rect key="frame" x="0.0" y="44.5" width="354" height="177"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WWH-0V-mxO" secondAttribute="height" multiplier="2:1" id="ena-i7-gGi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX6-uB-lYW">
+                                        <rect key="frame" x="310" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Al5-7j-hF3"/>
+                                            <constraint firstAttribute="width" constant="44" id="Hih-qm-2NF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="exotic-agent-regular" family="exotic agent" pointSize="17"/>
+                                        <state key="normal" title="Setting" image="setting">
+                                            <color key="titleColor" name="BabyPowder"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gcj-6u-RBz" secondAttribute="height" multiplier="4:3" id="5BW-W9-4RS"/>
+                                    <constraint firstItem="WWH-0V-mxO" firstAttribute="centerY" secondItem="gcj-6u-RBz" secondAttribute="centerY" id="HEq-dr-xSG"/>
+                                    <constraint firstItem="WWH-0V-mxO" firstAttribute="leading" secondItem="gcj-6u-RBz" secondAttribute="leading" id="OSD-HT-Hjc"/>
+                                    <constraint firstAttribute="trailing" secondItem="dX6-uB-lYW" secondAttribute="trailing" id="VdF-GX-GyE"/>
+                                    <constraint firstAttribute="trailing" secondItem="WWH-0V-mxO" secondAttribute="trailing" id="ePO-tO-Bdx"/>
+                                    <constraint firstItem="dX6-uB-lYW" firstAttribute="top" secondItem="gcj-6u-RBz" secondAttribute="top" id="wcB-ke-qTa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZL-es-Kep">
+                                <rect key="frame" x="30" y="515.5" width="354" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z2-cS-8bx">
+                                        <rect key="frame" x="189" y="0.0" width="165" height="56"/>
+                                        <color key="backgroundColor" red="0.93699997663497925" green="0.27799999713897705" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="exotic-agent-regular" family="exotic agent" pointSize="17"/>
+                                        <color key="tintColor" red="0.93333333330000001" green="0.28627450980000002" blue="0.28627450980000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="LOCK" image="lock_24">
+                                            <color key="titleColor" name="BabyPowder"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-3G-DM1">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="56"/>
+                                        <color key="backgroundColor" red="0.024000000208616257" green="0.83899998664855957" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="exotic-agent-regular" family="exotic agent" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="UNLOCK" image="lock_open_24">
+                                            <color key="titleColor" name="BabyPowder"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="4LT-r4-0ft"/>
+                                    <constraint firstItem="MQa-3G-DM1" firstAttribute="leading" secondItem="iZL-es-Kep" secondAttribute="leading" id="607-SV-mN3"/>
+                                    <constraint firstItem="9Z2-cS-8bx" firstAttribute="width" secondItem="MQa-3G-DM1" secondAttribute="width" id="84B-gG-qWT"/>
+                                    <constraint firstAttribute="bottom" secondItem="MQa-3G-DM1" secondAttribute="bottom" id="AEg-83-Aph"/>
+                                    <constraint firstItem="MQa-3G-DM1" firstAttribute="top" secondItem="iZL-es-Kep" secondAttribute="top" id="Vml-r9-vL5"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Z2-cS-8bx" secondAttribute="bottom" id="llh-Ho-bL4"/>
+                                    <constraint firstItem="9Z2-cS-8bx" firstAttribute="top" secondItem="iZL-es-Kep" secondAttribute="top" id="vDr-Kj-0rC"/>
+                                    <constraint firstItem="9Z2-cS-8bx" firstAttribute="leading" secondItem="MQa-3G-DM1" secondAttribute="trailing" constant="24" id="yIU-8i-q29"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Z2-cS-8bx" secondAttribute="trailing" id="yeh-46-yq8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Shadow"/>
+                        <constraints>
+                            <constraint firstItem="iZL-es-Kep" firstAttribute="top" secondItem="gcj-6u-RBz" secondAttribute="bottom" constant="30" id="2Yw-Qy-jj7"/>
+                            <constraint firstItem="fWc-Jw-Owb" firstAttribute="top" secondItem="xyb-rG-B3n" secondAttribute="top" constant="30" id="2ac-uf-sZI"/>
+                            <constraint firstItem="fWc-Jw-Owb" firstAttribute="centerX" secondItem="BxZ-7Z-7ni" secondAttribute="centerX" id="Ey7-iN-Clv"/>
+                            <constraint firstItem="xyb-rG-B3n" firstAttribute="trailing" secondItem="gcj-6u-RBz" secondAttribute="trailing" constant="30" id="ROO-ev-ZZ1"/>
+                            <constraint firstItem="iZL-es-Kep" firstAttribute="leading" secondItem="xyb-rG-B3n" secondAttribute="leading" constant="30" id="Rna-6v-xwM"/>
+                            <constraint firstItem="gcj-6u-RBz" firstAttribute="top" secondItem="fWc-Jw-Owb" secondAttribute="bottom" constant="100" id="i5g-Or-JU9"/>
+                            <constraint firstItem="xyb-rG-B3n" firstAttribute="trailing" secondItem="iZL-es-Kep" secondAttribute="trailing" constant="30" id="oGg-yk-F2h"/>
+                            <constraint firstItem="gcj-6u-RBz" firstAttribute="leading" secondItem="xyb-rG-B3n" secondAttribute="leading" constant="30" id="si0-9v-Zhv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xyb-rG-B3n"/>
+                    </view>
+                    <connections>
+                        <outlet property="lockButton" destination="9Z2-cS-8bx" id="RGh-o3-2Uk"/>
+                        <outlet property="pandaContainerView" destination="gcj-6u-RBz" id="rdd-Kg-iLh"/>
+                        <outlet property="settingButton" destination="dX6-uB-lYW" id="Rbk-ul-C6y"/>
+                        <outlet property="unlockButton" destination="MQa-3G-DM1" id="eSY-C0-eye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogX-Yw-DuN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.072463768115945" y="14.732142857142856"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="CaribbeanGreen"/>
+    <resources>
+        <image name="lock_24" width="24" height="24"/>
+        <image name="lock_open_24" width="24" height="24"/>
+        <image name="logo" width="320" height="54"/>
+        <image name="setting" width="48" height="48"/>
+        <image name="wireframe" width="400" height="200"/>
+        <namedColor name="BabyPowder">
+            <color red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CaribbeanGreen">
+            <color red="0.024000000208616257" green="0.83899998664855957" blue="0.62699997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Shadow">
+            <color red="0.16470588235294117" green="0.19215686274509805" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
